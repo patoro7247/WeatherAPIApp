@@ -24,3 +24,6 @@ html {
 
 }
 
+#flash_messages {
+	color: white;
+}

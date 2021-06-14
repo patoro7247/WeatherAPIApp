@@ -7,7 +7,11 @@ from app.forms import PostForm
 def index():
 	form = PostForm()
 	if form.validate_on_submit():
-		#flash('City: {}, State: {}'.format(form.city.data,form.state.data))
-		return redirect('/index')
+		flash('Submission Requested for:\nCity: {}, State: {}'.format(form.city.data, form.state.data))
+		return redirect(url_for('confirmation'))
 	return render_template('index.html', form=form)
+
+@app.route('/confirmation')
+def confirmation():
+	return 'Thank you for submitting'
 
