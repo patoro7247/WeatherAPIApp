@@ -1,0 +1,26 @@
+html {
+	background: url(background-sunny.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+#form_container {
+	background-color: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	border-radius: 25px;
+  	border: 2px solid #000;
+
+	background-color: white;
+	text-align: center;
+	padding: 5px 0px;
+	transform: translate(-50%,-50%);
+	padding: 20px 50px;
+
+}
+
