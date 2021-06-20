@@ -16,7 +16,7 @@
 	    </div>
 
 		<div id="form_container">
-			<form action="" method="POST" >
+			<form action="" method="post" >
 				{{ form.hidden_tag() }}
 				<div id="user_info">
 					<p>
@@ -37,13 +37,10 @@
 							{% endfor %}
 						</ul>
 					</p>
+					
 					<p>
-						{{ form.humidity.label }}<br>
-						{{ form.humidity(size=32) }}
-					</p>
-					<p>
-						{{ form.email.label }}<br>
-						{{ form.email(size=32) }}
+						{{ form.username.label }}<br>
+						{{ form.username(size=32) }}
 					</p>
 					<p>
 						{{ form.submit() }}<br>
