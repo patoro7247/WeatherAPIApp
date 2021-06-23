@@ -10,3 +10,4 @@ itsdangerous==2.0.1
 email_validator
 flask-sqlalchemy==2.5.1
 flask-migrate==3.0.1
+requests==2.25.1

@@ -9,9 +9,7 @@ def index():
 	form = RegistrationForm()
 	if form.validate_on_submit():
 		#user = User.query.filter_by(username=form.email.data).first()
-		location = form.city.data + ', '+form.state.data
-
-		user = User(username=form.username.data, address=location, desired_temperature=form.temp.data)
+		user = User(username=form.username.data, zip_code=form.zip_code.data, desired_temperature=form.temp.data, email=form.username.data)
 		db.session.add(user)
 		db.session.commit()
 		flash('We\'ll now send you an email whenever the temperature high in your city is at or above your desired temp')

@@ -15,8 +15,7 @@ class PostForm(FlaskForm):
 
 class RegistrationForm(FlaskForm):
 	username = EmailField('Email', validators = [InputRequired(message="Email required")])
-	city = StringField('City', validators = [InputRequired(message="City required")])
-	state = StringField('State', validators = [InputRequired(message="State required")])
+	zip_code = IntegerField('Zip Code', validators = [InputRequired(message="Zip Code required")])
 	temp = IntegerField('Temp', validators = [InputRequired(message="Temperature required")])
 	submit = SubmitField('Submit')
 	
