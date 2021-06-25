@@ -1,7 +1,6 @@
 # Weather API App
 
-This web app takes a user's location, desired temperature and humidity, and email address, and  
-will send an email to the user every time the a desired temperature and humidity combination is  
-reached in their location(max 1/day).  
-I plan to use a weather API app that takes coordinates and returns temperature and humidity,  
-at which point I'll have to automate the email sending.  
+This web app takes a user's location, desired temperature, email address, which is then entered into a database(sqlite).
+I'm using OpenWeatherMap's API that takes each user's zip code in the database to get the forecasted high temperature for that day.  
+If the forecasted high temperature for that day is equal to or greater the user's desired_temperature, the user will be sent an email  
+using python's smtplib that will notify them.  
